@@ -1,0 +1,51 @@
+.header-contact {
+  padding: 2rem 0;
+  .row--lg {
+    color: $color-grey-dark;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    svg {
+      width: 1.6rem;
+      height: 1.6rem;
+      fill: currentColor;
+      transition: all 0.2s ease-out;
+
+      &:hover {
+        fill: $color-primary-dark;
+      }
+    }
+  }
+
+  &__link {
+    &:not(:last-child) {
+      margin-right: 1.6rem;
+    }
+  }
+
+  &__logo-box {
+  }
+
+  &__logo {
+    width: 30.4rem;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    svg {
+      height: 1.6rem;
+      width: 1.6rem;
+      fill: currentColor;
+      margin-right: 1.6rem;
+    }
+  }
+}

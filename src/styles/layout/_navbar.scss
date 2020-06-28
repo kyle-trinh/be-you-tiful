@@ -1,0 +1,39 @@
+.navigation {
+  &__nav {
+  }
+
+  &__list {
+    display: flex;
+    width: $website-width;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-top: 1px solid $color-grey-light-2;
+    border-bottom: 1px solid $color-grey-light-2;
+    padding: 1.6rem 2rem;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    transition: all 0.2s ease-out;
+
+    &:hover {
+      color: $color-primary-dark;
+    }
+
+    &--cta {
+      background-color: $color-primary-light;
+      padding: 0.8rem 1.6rem;
+      border-radius: 10rem;
+
+      &:hover {
+        background-color: $color-secondary-light;
+        color: $color-white;
+      }
+    }
+  }
+}
