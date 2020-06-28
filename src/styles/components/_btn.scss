@@ -1,0 +1,46 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    border-radius: 10rem;
+    padding: 1rem 2.8rem;
+    @include easeOut;
+    font-size: $default-font-size;
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    transform: translateY(-0.2rem);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+
+  &--primary {
+    background-color: $color-primary-light;
+    color: $color-grey-dark;
+  }
+
+  &--white {
+    background-color: $color-white;
+
+    &:hover {
+      background-color: $color-primary-light;
+    }
+  }
+
+  &--secondary {
+    background-color: $color-secondary-light;
+    color: $color-white;
+
+    &:hover {
+      background-color: $color-secondary-dark;
+    }
+  }
+}

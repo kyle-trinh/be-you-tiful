@@ -4,3 +4,10 @@ body {
   line-height: 1.6;
   color: $color-grey-dark;
 }
+
+.heading-primary {
+  color: $color-secondary-dark;
+  font-size: 3.8rem;
+  line-height: 1.2;
+  text-transform: capitalize;
+}

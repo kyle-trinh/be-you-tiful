@@ -1,0 +1,32 @@
+.header-intro {
+  display: flex;
+  width: $website-width;
+  margin: 0 auto;
+  position: relative;
+  flex: 0 0 auto;
+  margin-bottom: 6rem;
+
+  &__photo {
+    position: relative;
+    top: 4rem;
+    left: 6rem;
+    min-width: 50rem;
+    height: 50rem;
+    //  height: 50rem;
+    background-image: linear-gradient(
+        to right bottom,
+        $color-primary-light,
+        $color-primary-dark
+      ),
+      url(../images/header-intro.png);
+    background-blend-mode: soft-light;
+  }
+
+  &__content {
+    background-color: $color-grey-light-2;
+    padding: 4rem 4rem 4rem 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
