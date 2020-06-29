@@ -11,3 +11,27 @@ body {
   line-height: 1.2;
   text-transform: capitalize;
 }
+
+.heading-teriary {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: $color-secondary-light;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 8rem;
+    background-color: $color-grey-light-2;
+    margin: 2rem auto;
+  }
+}
+
+.text-primary {
+  color: $color-primary-dark;
+}
+
+.text-bold {
+  font-weight: 700;
+}

@@ -1,0 +1,36 @@
+.welcome {
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 6rem;
+  }
+
+  &-box {
+    text-align: center;
+    padding: 5rem 3rem;
+    &--2 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
+        ),
+        url(../images/photo-1.png);
+      background-size: cover;
+      background-blend-mode: soft-light;
+    }
+    &--3 {
+      background-color: $color-primary-light;
+      color: $color-white;
+      @include easeOut;
+
+      .heading-teriary {
+        color: $color-white;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        background-color: $color-primary-dark;
+      }
+    }
+  }
+}
