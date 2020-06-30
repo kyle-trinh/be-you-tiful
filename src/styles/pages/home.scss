@@ -1,4 +1,5 @@
-.section-works {
+.section-works,
+.section-testimonials {
   background-color: $color-primary-light;
 }
 
@@ -18,6 +19,28 @@
       }
       &:nth-child(2n) {
         justify-self: end;
+      }
+    }
+  }
+}
+
+.section-testimonials {
+  .swiper-container {
+    .swiper-slide {
+      background-image: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      &__user-photo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 15rem;
+        }
       }
     }
   }

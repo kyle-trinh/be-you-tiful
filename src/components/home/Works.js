@@ -7,7 +7,7 @@ import Photo3 from "../../images/photo-3.png"
 const Works = () => {
   const slider = useRef(null)
   useEffect(() => {
-    const swiper = new Swiper(".swiper-container", {
+    const swiper = new Swiper(".swiper-1", {
       // Optional parameters
 
       loop: true,
@@ -33,7 +33,7 @@ const Works = () => {
       //   el: ".swiper-scrollbar",
       // },
     })
-  }, [slider])
+  }, [])
   return (
     <section className="section-works">
       <div className="container">
@@ -47,7 +47,7 @@ const Works = () => {
         </div>
         <div className="swiper-outer-container">
           {" "}
-          <div className="swiper-container" ref={slider}>
+          <div className="swiper-container swiper-1" ref={slider}>
             <div className="swiper-wrapper">
               <div className="swiper-slide ">
                 <img
