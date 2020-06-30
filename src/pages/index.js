@@ -6,6 +6,8 @@ import Welcome from "../components/home/Welcome"
 import Works from "../components/home/Works"
 import Services from "../components/home/Services"
 import Testimonials from "../components/home/Testimonials"
+import Team from "../components/home/Team"
+import CTA from "../components/home/CTA"
 
 import SEO from "../components/seo"
 
@@ -16,6 +18,8 @@ const IndexPage = () => (
     <Works />
     <Services />
     <Testimonials />
+    <Team />
+    <CTA />
   </Layout>
 )
 
