@@ -1,0 +1,80 @@
+.swiper-container {
+  height: 38rem;
+  width: 85%;
+
+  .swiper-slide {
+    height: 85%;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    overflow: hidden;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.2),
+      rgba($color-primary-dark, 0.8)
+    );
+
+    &__image {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      transform: scale(1);
+      mix-blend-mode: overlay;
+      @include easeOut;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .swiper-scrollbar {
+    display: none;
+  }
+}
+
+.swiper-outer-container {
+  position: relative;
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    background-color: #fff;
+    width: 6rem;
+    height: 6rem;
+    top: 40%;
+    @include easeOut;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      background-color: $color-secondary-light;
+
+      &::after {
+        color: $color-white;
+      }
+    }
+
+    &::after {
+      font-size: 3rem;
+      color: $color-secondary-light;
+      font-weight: 700;
+    }
+  }
+  .swiper-button-prev {
+    &::after {
+      content: "←";
+    }
+  }
+
+  .swiper-button-next {
+    &::after {
+      content: "→";
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $color-secondary-light;
+  }
+}

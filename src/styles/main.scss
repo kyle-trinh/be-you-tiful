@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
-
+@import "vendors/_swiper.scss";
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
@@ -13,3 +13,6 @@
 @import "layout/container";
 @import "components/btn";
 @import "components/welcome-content";
+
+@import "pages/home.scss";
+@import "components/swiper";

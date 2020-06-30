@@ -35,3 +35,19 @@ body {
 .text-bold {
   font-weight: 700;
 }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: $color-secondary-dark;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    display: block;
+    margin: 1.6rem auto;
+    height: 1px;
+    width: 8rem;
+    background-color: $color-grey-dark-2;
+  }
+}
