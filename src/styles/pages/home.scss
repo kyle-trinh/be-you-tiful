@@ -1,3 +1,24 @@
 .section-works {
   background-color: $color-primary-light;
 }
+
+.section-services {
+  .services-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 2rem;
+    grid-gap: 4rem;
+
+    &__item {
+      span {
+        display: block;
+        font-size: 1.8rem;
+        color: $color-secondary-light;
+        font-weight: 300;
+      }
+      &:nth-child(2n) {
+        justify-self: end;
+      }
+    }
+  }
+}
