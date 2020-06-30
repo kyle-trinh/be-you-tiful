@@ -1,11 +1,5 @@
 .header-contact {
   padding: 2rem 0;
-  .row--lg {
-    color: $color-grey-dark;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
 
   &__social {
     display: flex;
@@ -48,4 +42,11 @@
       margin-right: 1.6rem;
     }
   }
+}
+
+.row--lg {
+  color: $color-grey-dark;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
