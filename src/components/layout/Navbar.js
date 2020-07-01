@@ -30,7 +30,7 @@ const Navbar = () => {
           </a>
         </li>
         <li className="navigation__item">
-          <a href="#" className="navigation__link navigation__link--cta">
+          <a href="#contact" className="navigation__link navigation__link--cta">
             book now
           </a>
         </li>

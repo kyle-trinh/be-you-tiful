@@ -20,7 +20,7 @@ const SiteDescription = () => {
             <Link to="/" className="btn btn--white u-margin-right-small">
               Learn more
             </Link>
-            <Link to="/" className="btn btn--secondary">
+            <Link to="/#contact" className="btn btn--secondary">
               Book now
             </Link>
           </div>

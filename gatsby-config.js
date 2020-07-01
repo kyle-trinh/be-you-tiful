@@ -32,4 +32,5 @@ module.exports = {
     // `gatsby-plugin-offline`,
     `gatsby-plugin-sass`,
   ],
+  pathPrefix: "/be-you-tiful",
 }

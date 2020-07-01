@@ -8,7 +8,7 @@ const CTA = () => {
         <h2 className="heading-secondary u-margin-bottom-medium">
           What are you waiting for?
         </h2>
-        <Link to="/" className="btn btn--secondary">
+        <Link to="/#contact" className="btn btn--secondary">
           Book now
         </Link>
       </div>
