@@ -1,10 +1,14 @@
 import React from "react"
 
-const HamburgerNav = ({ onHandleClick }) => {
+const HamburgerNav = ({ onHandleClick, showNav }) => {
   return (
-    <div className="nav-btn" onClick={onHandleClick}>
-      <div className="nav-btn__line"></div>
-      <div className="nav-btn__line"></div>
+    <div
+      className={`nav-btn ${showNav ? "show" : ""}`}
+      onClick={e => {
+        e.stopPropagation()
+        onHandleClick()
+      }}
+    >
       <div className="nav-btn__line"></div>
     </div>
   )

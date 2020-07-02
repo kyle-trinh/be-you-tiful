@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useState } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -25,13 +25,22 @@ const Layout = ({ children }) => {
     }
   `)
 
+  const [showNav, setShowNav] = useState(false)
+
+  const onHandleClick = () => setShowNav(!showNav)
+
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header
+        siteTitle={data.site.siteMetadata.title}
+        onHandleClick={onHandleClick}
+        showNav={showNav}
+        onHeaderClick={() => setShowNav(false)}
+      />
 
-      <main>{children}</main>
+      <main onClick={() => setShowNav(false)}>{children}</main>
 
-      <Footer />
+      <Footer onClick={() => setShowNav(false)} />
     </>
   )
 }

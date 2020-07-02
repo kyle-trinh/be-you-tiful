@@ -16,7 +16,7 @@ const SiteDescription = () => {
             quaerat reprehenderit voluptatum sunt nam aliquam placeat sapiente
             non autem molestias ducimus?
           </p>
-          <div className="header-into__buttons">
+          <div className="header-intro__buttons">
             <Link to="/" className="btn btn--white u-margin-right-small">
               Learn more
             </Link>

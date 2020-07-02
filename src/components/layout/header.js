@@ -6,13 +6,10 @@ import Navbar from "./Navbar"
 import SiteDescription from "./SiteDescription"
 import HamburgerNav from "./HamburgerNav"
 
-const Header = ({ siteTitle }) => {
-  const [showNav, setShowNav] = useState(false)
-
-  const onHandleClick = () => setShowNav(!showNav)
+const Header = ({ siteTitle, onHandleClick, showNav, onHeaderClick }) => {
   return (
-    <header>
-      <HamburgerNav onHandleClick={onHandleClick} />
+    <header onClick={onHeaderClick}>
+      <HamburgerNav onHandleClick={onHandleClick} showNav={showNav} />
       <HeaderContact />
       <Navbar className={showNav ? "show" : ""} />
       <SiteDescription />

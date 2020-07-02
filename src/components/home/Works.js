@@ -11,10 +11,26 @@ const Works = () => {
       // Optional parameters
 
       loop: true,
-      slidesPerView: 3,
+      slidesPerView: 1,
       spaceBetween: 30,
       slidesPerGroup: 1,
       loopFillGroupWithBlank: true,
+
+      breakpoints: {
+        640: {
+          slidesPerView: 3,
+        },
+
+        900: {
+          slidesPerView: 3,
+        },
+        1200: {
+          slidesPerView: 3,
+        },
+        1800: {
+          slidesPerView: 3,
+        },
+      },
 
       // If we need pagination
       pagination: {
