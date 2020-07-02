@@ -1,4 +1,9 @@
 .row--lg {
   max-width: $website-width;
   margin: 0 auto;
+  overflow: hidden;
+
+  @include respond(tab-port) {
+    padding: 0 2rem;
+  }
 }

@@ -15,6 +15,10 @@
         fill: $color-primary-dark;
       }
     }
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 
   &__link {
@@ -41,12 +45,20 @@
       fill: currentColor;
       margin-right: 1.6rem;
     }
-  }
-}
 
-.row--lg {
-  color: $color-grey-dark;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  .row--lg {
+    color: $color-grey-dark;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include respond(phone) {
+      justify-content: center;
+    }
+  }
 }

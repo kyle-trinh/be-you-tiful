@@ -1,0 +1,18 @@
+.nav-btn {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  display: none;
+  &__line {
+    height: 2px;
+    width: 4rem;
+    background-color: $color-grey-dark;
+
+    &:not(:last-child) {
+      margin-bottom: 0.8rem;
+    }
+  }
+  @include respond(phone) {
+    display: block;
+  }
+}

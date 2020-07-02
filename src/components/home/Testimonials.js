@@ -32,7 +32,7 @@ const Testimonials = () => {
     })
   }, [])
   return (
-    <section class="section-testimonials">
+    <section className="section-testimonials">
       <div className="u-center-text u-margin-bottom-medium">
         <h2 className="heading-secondary">What our client says</h2>
       </div>

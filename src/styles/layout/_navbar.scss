@@ -4,7 +4,7 @@
 
   &__list {
     display: flex;
-    width: $website-width;
+    max-width: $website-width;
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
@@ -13,9 +13,35 @@
     border-top: 1px solid $color-grey-light-2;
     border-bottom: 1px solid $color-grey-light-2;
     padding: 1.6rem 2rem;
+
+    @include respond(phone) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 80%;
+      z-index: 99999;
+      background-color: $color-primary-light;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.09);
+      transform: translateX(-70rem);
+      opacity: 0;
+      transition: all 0.4s ease-in;
+
+      &.show {
+        transform: translateX(0rem);
+        opacity: 1;
+      }
+    }
   }
 
   &__item {
+    @include respond(phone) {
+      margin-bottom: 2rem;
+    }
   }
 
   &__link {
@@ -23,12 +49,21 @@
 
     &:hover {
       color: $color-primary-dark;
+
+      @include respond(phone) {
+        color: $color-white;
+      }
     }
 
     &--cta {
       background-color: $color-primary-light;
       padding: 1rem 2rem;
       border-radius: 10rem;
+
+      @include respond(phone) {
+        background-color: $color-secondary-light;
+        color: $color-white;
+      }
 
       &:hover {
         background-color: $color-secondary-light;

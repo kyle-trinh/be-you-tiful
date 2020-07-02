@@ -1,17 +1,24 @@
-import { Link } from "gatsby"
+import { useState } from "react"
 import PropTypes from "prop-types"
 import React from "react"
 import HeaderContact from "./HeaderContact"
 import Navbar from "./Navbar"
 import SiteDescription from "./SiteDescription"
+import HamburgerNav from "./HamburgerNav"
 
-const Header = ({ siteTitle }) => (
-  <header>
-    <HeaderContact />
-    <Navbar />
-    <SiteDescription />
-  </header>
-)
+const Header = ({ siteTitle }) => {
+  const [showNav, setShowNav] = useState(false)
+
+  const onHandleClick = () => setShowNav(!showNav)
+  return (
+    <header>
+      <HamburgerNav onHandleClick={onHandleClick} />
+      <HeaderContact />
+      <Navbar className={showNav ? "show" : ""} />
+      <SiteDescription />
+    </header>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
