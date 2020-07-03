@@ -1,11 +1,17 @@
 .form {
   text-align: center;
+  padding: 0 6rem;
 
   &-group {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     margin-bottom: 2rem;
     align-items: center;
+
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr);
+    }
   }
 
   &__label {
@@ -13,6 +19,10 @@
     font-weight: 700;
     grid-column: 1 / 4;
     text-align: left;
+
+    @include respond(phone) {
+      grid-column: 1/-1;
+    }
   }
 
   &__input {
@@ -24,6 +34,10 @@
     padding: 0 2rem;
     font-size: 1.6rem;
     @include easeOut;
+
+    @include respond(phone) {
+      grid-column: 1/-1;
+    }
 
     &::placeholder {
       color: $color-grey-dark;

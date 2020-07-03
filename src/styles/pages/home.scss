@@ -10,6 +10,10 @@
     font-size: 2rem;
     grid-gap: 4rem;
 
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+    }
+
     &__item {
       span {
         display: block;
@@ -19,6 +23,14 @@
       }
       &:nth-child(2n) {
         justify-self: end;
+
+        @include respond(phone) {
+          justify-self: center;
+        }
+      }
+
+      @include respond(phone) {
+        justify-self: center;
       }
     }
   }
@@ -26,6 +38,10 @@
 
 .section-testimonials {
   .swiper-container {
+    @include respond(phone) {
+      width: 42rem;
+    }
+
     .swiper-slide {
       background-image: none;
       display: flex;
@@ -49,11 +65,21 @@
 .section-team {
   .container {
     max-width: 90rem;
+
+    @include respond(phone) {
+      padding: 0 5rem;
+    }
   }
   .member {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 2rem;
+
+    @include respond(phone) {
+      &:not(:last-child) {
+        margin-bottom: 6rem;
+      }
+    }
 
     &__photo {
       position: relative;

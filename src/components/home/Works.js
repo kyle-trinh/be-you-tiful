@@ -51,7 +51,7 @@ const Works = () => {
     })
   }, [])
   return (
-    <section className="section-works">
+    <section className="section-works" id="our-work">
       <div className="container">
         <div className="u-center-text u-margin-bottom-big">
           <h2 className="heading-secondary">Our works</h2>

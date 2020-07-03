@@ -1,5 +1,18 @@
 footer {
+  .header-contact__logo-box {
+    @include respond(phone) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
   padding: 3rem 0;
+
+  .row--lg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   .header-contact__info {
     flex-direction: column;
