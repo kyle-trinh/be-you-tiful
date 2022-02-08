@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `be-YOU-tiful Beauty Lounge`,
+    title: `JM Nails Spa Salon`,
     description: `The only place you will need to get those flashy nails done`,
     author: `@binhthaitrinh`,
   },
@@ -32,5 +32,4 @@ module.exports = {
     // `gatsby-plugin-offline`,
     `gatsby-plugin-sass`,
   ],
-  pathPrefix: "/be-you-tiful",
 }
