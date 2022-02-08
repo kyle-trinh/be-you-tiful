@@ -19,6 +19,7 @@
       align-items: center;
       justify-content: space-between;
       border-bottom: 1px solid darken($color-grey-light-2, 10);
+      text-transform: capitalize;
 
       @include respond(phone) {
         justify-self: center;

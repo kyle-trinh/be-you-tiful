@@ -8,7 +8,7 @@ const Welcome = () => {
           <div className="welcome-box welcome-box--1">
             <h3 className="heading-teriary">
               Welcome to <br></br>{" "}
-              <span className="text-primary">JM NAILS</span>
+              <span className="text-primary">JM NAILS SPA</span>
             </h3>
             <p className="welcome-box__text">
               Pedicure And Manicure Treatments To Make You Feel Good. Call Us
@@ -20,16 +20,12 @@ const Welcome = () => {
             <h3 className="heading-teriary">Opening hours</h3>
             <ul>
               <li>
-                Monday - Friday: <br></br>
-                <span className="text-bold">10am - 5pm</span>
-              </li>
-              <li>
-                Saturday: <br></br>
-                <span className="text-bold">10am - 5pm</span>
+                Monday - Saturday: <br></br>
+                <span className="text-bold">10am - 7pm</span>
               </li>
               <li>
                 Sunday: <br></br>
-                <span className="text-bold">10am - 5pm</span>
+                <span className="text-bold">11am - 5pm</span>
               </li>
             </ul>
           </div>

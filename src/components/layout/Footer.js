@@ -14,18 +14,16 @@ const Footer = () => {
           <h3>Contact</h3>
           <ul className="contact__list">
             <li className="contact__item">
-              <Map />{" "}
+              <Map />
               <span>
-                XXXX XXXX XXXXX XXXXX,<br></br> XXXX XXXXX, CA XXXXX
+                2922 Glen Dr, Suite #117<br></br> Coquitlam, British Columbia
               </span>
             </li>
             <li className="contact__item">
-              <PhoneIcon />
-              <span>(XXX) XXX - XXXX</span>
-            </li>
-            <li className="contact__item">
-              <Mail />
-              <span>xxxxxxx@gmail.com</span>
+              <a href="tel:6044642200">
+                <PhoneIcon />
+                <span>(604) 464 - 2200</span>
+              </a>
             </li>
           </ul>
         </div>

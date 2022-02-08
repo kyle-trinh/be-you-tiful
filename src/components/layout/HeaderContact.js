@@ -20,11 +20,11 @@ const HeaderContact = () => {
             <InstagramIcon />
           </a>
           <a
-            href="tel:123321"
+            href="tel:6044642200"
             style={{ display: "flex", alignItems: "center", lineHeight: 0 }}
           >
             <PhoneIcon />
-            <p style={{ marginLeft: "1rem" }}>(XXX) XXX - XXXX</p>
+            <p style={{ marginLeft: "1rem" }}>(604) 464 - 2200</p>
           </a>
           {/* <a href="www.pinterest.com" className="header-contact__link">
             <PinterestIcon />
