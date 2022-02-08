@@ -1,29 +1,12 @@
 import React from "react"
-import {
-  FacebookIcon,
-  InstagramIcon,
-  PinterestIcon,
-  Map,
-  PhoneIcon,
-  Mail,
-} from "../icons"
+import { Map, PhoneIcon, Mail } from "../icons"
 import Logo from "../../images/logo/logo.png"
 
 const Footer = () => {
   return (
     <footer>
       <div className="row--lg">
-        <div className="header-contact__social">
-          <a href="www.facebook.com" className="header-contact__link">
-            <FacebookIcon />
-          </a>
-          <a href="www.instagram.com" className="header-contact__link">
-            <InstagramIcon />
-          </a>
-          <a href="www.pinterest.com" className="header-contact__link">
-            <PinterestIcon />
-          </a>
-        </div>
+        <div className="header-contact__social"></div>
         <div className="header-contact__logo-box">
           <img src={Logo} alt="logo" className="header-contact__logo" />
         </div>
@@ -33,16 +16,16 @@ const Footer = () => {
             <li className="contact__item">
               <Map />{" "}
               <span>
-                16565 Mount Michaelis Circle,<br></br> Fountain Valley, CA 92708
+                XXXX XXXX XXXXX XXXXX,<br></br> XXXX XXXXX, CA XXXXX
               </span>
             </li>
             <li className="contact__item">
               <PhoneIcon />
-              <span>(714) 726 - 7760</span>
+              <span>(XXX) XXX - XXXX</span>
             </li>
             <li className="contact__item">
               <Mail />
-              <span>trinhthaibinh.ecom@gmail.com</span>
+              <span>xxxxxxx@gmail.com</span>
             </li>
           </ul>
         </div>

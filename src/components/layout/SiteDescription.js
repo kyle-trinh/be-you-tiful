@@ -11,10 +11,9 @@ const SiteDescription = () => {
             Great nails dont happen by chance <br /> They happen by appointment
           </h1>
           <p className="heading-primary--sub u-margin-bottom-small">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut,
-            laboriosam magni tempora consequatur amet deleniti! Totam quia, quam
-            quaerat reprehenderit voluptatum sunt nam aliquam placeat sapiente
-            non autem molestias ducimus?
+            JM Nails Spa is committed to excellence in all aspects of our
+            business and providing a relaxing, positive, fun, creative, healthy
+            and safe environment for our valued clients and our staff.
           </p>
           <div className="header-intro__buttons">
             <Link to="/" className="btn btn--white u-margin-right-small">

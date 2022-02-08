@@ -8,11 +8,11 @@ const Welcome = () => {
           <div className="welcome-box welcome-box--1">
             <h3 className="heading-teriary">
               Welcome to <br></br>{" "}
-              <span className="text-primary">be-YOU-tiful</span>
+              <span className="text-primary">JM NAILS</span>
             </h3>
             <p className="welcome-box__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-              suscipit doloribus, molestias accusamus quam aut esse quia,
+              Pedicure And Manicure Treatments To Make You Feel Good. Call Us
+              Today to Schedule!
             </p>
           </div>
           <div className="welcome-box welcome-box--2"></div>

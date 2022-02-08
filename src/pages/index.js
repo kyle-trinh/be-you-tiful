@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Welcome from "../components/home/Welcome"
@@ -19,8 +18,8 @@ const IndexPage = () => (
     <Works />
     <Services />
     <Testimonials />
-    <Team />
-    <CTA />
+    {/* <Team /> */}
+    {/* <CTA /> */}
     <Contact />
   </Layout>
 )

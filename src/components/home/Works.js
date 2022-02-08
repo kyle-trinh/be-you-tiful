@@ -7,7 +7,7 @@ import Photo3 from "../../images/photo-3.png"
 const Works = () => {
   const slider = useRef(null)
   useEffect(() => {
-    const swiper = new Swiper(".swiper-1", {
+    new Swiper(".swiper-1", {
       // Optional parameters
 
       loop: true,
@@ -55,11 +55,6 @@ const Works = () => {
       <div className="container">
         <div className="u-center-text u-margin-bottom-big">
           <h2 className="heading-secondary">Our works</h2>
-          <p className="section-sub">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-            explicabo impedit nesciunt libero molestiae. Ea autem cum doloremque
-            illo unde.
-          </p>
         </div>
         <div className="swiper-outer-container">
           {" "}
@@ -68,7 +63,7 @@ const Works = () => {
               <div className="swiper-slide ">
                 <img
                   src={Photo1}
-                  alt="photo 1"
+                  alt="work 1"
                   className="swiper-slide__image"
                 />
               </div>
@@ -76,7 +71,7 @@ const Works = () => {
                 {" "}
                 <img
                   src={Photo2}
-                  alt="photo 1"
+                  alt="work 2"
                   className="swiper-slide__image"
                 />
               </div>
@@ -84,7 +79,7 @@ const Works = () => {
                 {" "}
                 <img
                   src={Photo3}
-                  alt="photo 1"
+                  alt="work 3"
                   className="swiper-slide__image"
                 />
               </div>

@@ -6,7 +6,7 @@ const Navbar = ({ className }) => {
       <div className="row--lg">
         <ul className={`navigation__list ${className}`}>
           <li className="navigation__item">
-            <a href="#" className="navigation__link">
+            <a href="/" className="navigation__link">
               home
             </a>
           </li>
@@ -25,11 +25,7 @@ const Navbar = ({ className }) => {
               testimonials
             </a>
           </li>
-          <li className="navigation__item">
-            <a href="#team" className="navigation__link">
-              artists
-            </a>
-          </li>
+
           <li className="navigation__item">
             <a
               href="#contact"

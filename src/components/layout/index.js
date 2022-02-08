@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
         onHeaderClick={() => setShowNav(false)}
       />
 
-      <main onClick={() => setShowNav(false)}>{children}</main>
+      <main>{children}</main>
 
       <Footer onClick={() => setShowNav(false)} />
     </>

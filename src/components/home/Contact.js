@@ -19,7 +19,7 @@ const Contact = () => {
     const form = e.target
     setServerState({ submitting: true })
     try {
-      const res = await axios({
+      await axios({
         method: "post",
         url: "https://getform.io/f/7836d0bd-02f1-4b38-9f15-10b7eef2bac3",
         data: new FormData(form),
@@ -40,6 +40,10 @@ const Contact = () => {
     <section className="section-contact" id="contact">
       <div className="u-center-text u-margin-bottom-big">
         <h2 className="heading-secondary">Contact Us</h2>
+        <p>
+          Please leave your contact information here, we will reach out to you
+          soon!
+        </p>
       </div>
       <div className="container">
         <form

@@ -15,24 +15,34 @@
     }
 
     &__item {
-      span {
-        display: block;
-        font-size: 1.8rem;
-        color: $color-secondary-light;
-        font-weight: 300;
-      }
-      &:nth-child(2n) {
-        justify-self: end;
-
-        @include respond(phone) {
-          justify-self: center;
-        }
-      }
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid darken($color-grey-light-2, 10);
 
       @include respond(phone) {
         justify-self: center;
       }
     }
+  }
+}
+
+.section-services__sub-heading {
+  text-align: center;
+  margin-top: 3.2rem;
+  font-weight: 400;
+  font-size: 3rem;
+  color: $color-secondary-dark;
+  position: relative;
+
+  &:after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100px;
+    background-color: $color-grey-dark-2;
+    margin: 1rem auto;
+    margin-bottom: 4rem;
   }
 }
 

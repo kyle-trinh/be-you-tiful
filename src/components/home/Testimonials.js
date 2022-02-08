@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from "react"
 import Swiper from "swiper"
-import Photo from "../../images/photo-1.png"
+import Photo from "../../images/avatar.png"
 
 const Testimonials = () => {
   const slider = useRef(null)
   useEffect(() => {
-    const swiper = new Swiper(".swiper-2", {
+    new Swiper(".swiper-2", {
       // Optional parameters
 
       loop: true,
@@ -38,55 +38,53 @@ const Testimonials = () => {
       </div>
       <div className="container">
         <div className="swiper-outer-container">
-          {" "}
           <div className="swiper-container swiper-2" ref={slider}>
             <div className="swiper-wrapper">
               <div className="swiper-slide">
-                <div className="swiper-slide__comment u-center-text u-margin-bottom-medium">
+                <figure className="swiper-slide__user-photo u-margin-bottom-medium">
+                  <img src={Photo} alt="" className="u-margin-bottom-small" />
+                  <figcaption>
+                    <span className="u-bold-text">Mia Nguyen</span>, CA
+                  </figcaption>
+                </figure>
+                <div className="swiper-slide__comment u-center-text ">
                   <p>
                     "As always my nails are amazing. You are such great
                     professionals. I don't know how I ever got by before you
                     came in to my life! You girls are the best!""
                   </p>
                 </div>
-                <figure className="swiper-slide__user-photo">
-                  <img src={Photo} alt="" className="u-margin-bottom-small" />
-                  <figcaption>
-                    <span className="u-bold-text">Mia Nguyen</span>, CA
-                  </figcaption>
-                </figure>
               </div>
               <div className="swiper-slide">
-                {" "}
-                <div className="swiper-slide__comment u-center-text u-margin-bottom-medium">
-                  <p>
-                    "As always my nails are amazing. You are such great
-                    professionals. I don't know how I ever got by before you
-                    came in to my life! You girls are the best!""
-                  </p>
-                </div>
-                <figure className="swiper-slide__user-photo">
+                <figure className="swiper-slide__user-photo u-margin-bottom-medium">
                   <img src={Photo} alt="" className="u-margin-bottom-small" />
                   <figcaption>
-                    <span className="u-bold-text">Mia Nguyen</span>, CA
+                    <span className="u-bold-text">Daniel Nguyen</span>, CA
                   </figcaption>
                 </figure>
+                <div className="swiper-slide__comment u-center-text ">
+                  <p>
+                    "Duong and his staff are the kindest and funniest people
+                    around. They take pride in their work and are the best nail
+                    techs in the state. I will never go anywhere else ever
+                    again. You have a lifetime customer in me!"
+                  </p>
+                </div>
               </div>
               <div className="swiper-slide">
-                {" "}
-                <div className="swiper-slide__comment u-center-text u-margin-bottom-medium">
-                  <p>
-                    "As always my nails are amazing. You are such great
-                    professionals. I don't know how I ever got by before you
-                    came in to my life! You girls are the best!""
-                  </p>
-                </div>
-                <figure className="swiper-slide__user-photo">
+                <figure className="swiper-slide__user-photo u-margin-bottom-medium">
                   <img src={Photo} alt="" className="u-margin-bottom-small" />
                   <figcaption>
-                    <span className="u-bold-text">Mia Nguyen</span>, CA
+                    <span className="u-bold-text">Kyle Williams</span>, CA
                   </figcaption>
                 </figure>
+                <div className="swiper-slide__comment u-center-text ">
+                  <p>
+                    "Amazing service! The owners and employees really stand by
+                    the quality of their work, and it shows! Will definitely be
+                    a repeat customer."
+                  </p>
+                </div>
               </div>
             </div>
 
