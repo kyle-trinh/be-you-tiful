@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from "react"
 import Swiper from "swiper"
-import Photo from "../../images/avatar.png"
+import Photo1 from "../../images/com-1.png"
+import Photo2 from "../../images/com-2.png"
+import Photo3 from "../../images/com-3.png"
 
 const Testimonials = () => {
   const slider = useRef(null)
@@ -42,9 +44,10 @@ const Testimonials = () => {
             <div className="swiper-wrapper">
               <div className="swiper-slide">
                 <figure className="swiper-slide__user-photo u-margin-bottom-medium">
-                  <img src={Photo} alt="" className="u-margin-bottom-small" />
+                  <img src={Photo1} alt="" className="u-margin-bottom-small" />
                   <figcaption>
-                    <span className="u-bold-text">Mia Nguyen</span>, CA
+                    <span className="u-bold-text">Kellie Park</span> -
+                    Coquitlam, BC
                   </figcaption>
                 </figure>
                 <div className="swiper-slide__comment u-center-text ">
@@ -57,9 +60,10 @@ const Testimonials = () => {
               </div>
               <div className="swiper-slide">
                 <figure className="swiper-slide__user-photo u-margin-bottom-medium">
-                  <img src={Photo} alt="" className="u-margin-bottom-small" />
+                  <img src={Photo2} alt="" className="u-margin-bottom-small" />
                   <figcaption>
-                    <span className="u-bold-text">Daniel Nguyen</span>, CA
+                    <span className="u-bold-text">Karen Jones</span> - Surrey,
+                    BC
                   </figcaption>
                 </figure>
                 <div className="swiper-slide__comment u-center-text ">
@@ -73,9 +77,10 @@ const Testimonials = () => {
               </div>
               <div className="swiper-slide">
                 <figure className="swiper-slide__user-photo u-margin-bottom-medium">
-                  <img src={Photo} alt="" className="u-margin-bottom-small" />
+                  <img src={Photo3} alt="" className="u-margin-bottom-small" />
                   <figcaption>
-                    <span className="u-bold-text">Kyle Williams</span>, CA
+                    <span className="u-bold-text">Hailey Gavin</span> -
+                    Coquitlam, BC
                   </figcaption>
                 </figure>
                 <div className="swiper-slide__comment u-center-text ">
